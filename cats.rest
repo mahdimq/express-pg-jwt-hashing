@@ -1,0 +1,15 @@
+POST http://localhost:3000/cats
+Content-Type: application/json
+
+{
+  "name": "Father"
+}
+
+### GET ALL
+GET http://localhost:3000/cats
+Content-Type: application/json
+
+
+### DELETE
+DELETE http://localhost:3000/cats/Lilly
+Content-Type: application/json

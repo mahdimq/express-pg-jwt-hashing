@@ -1,0 +1,29 @@
+### GET ALL
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### SEARCH
+GET http://localhost:3000/users/search?type=user
+Content-Type: application/json
+
+### POST ONE
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Zayd",
+  "type": "admin"
+}
+
+### UPDATE ONE
+PATCH http://localhost:3000/users/8
+Content-Type: application/json
+
+{
+  "name": "Bilal",
+  "type": "admin"
+}
+
+### DELETE ONE
+DELETE http://localhost:3000/users/8
+Content-Type: application/json

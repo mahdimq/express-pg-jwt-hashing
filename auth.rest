@@ -1,0 +1,29 @@
+### REGISTER
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "james",
+  "password": "james"
+}
+
+### LOGIN
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "james",
+  "password": "james",
+}
+
+### PROTECTED ROUTE
+GET http://localhost:3000/admin
+Content-Type: application/json
+
+{
+  "_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJhbmFuYSIsImlhdCI6MTYwMzMwMTM5MH0.xxW40kKrZHbKDOcCqiJS9M23YIkdXJQ9nq9YgdFeHH8"
+}
+
+### GET ALL
+GET http://localhost:3000/
+Content-Type: application/json
